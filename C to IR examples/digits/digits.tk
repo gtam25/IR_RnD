@@ -1,0 +1,15 @@
+const
+input num
+assign num2 num
+assign sum
+assign reverse
+loop num 4
+assign digit num
+assign sum sum digit
+assign reverse reverse digit
+assign num num
+output num2 sum
+if reverse num2 2
+output num2
+else 1
+output num2

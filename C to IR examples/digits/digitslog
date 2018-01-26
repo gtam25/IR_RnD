@@ -1,0 +1,96 @@
+
+ Input File Name : ./testcases/digits/digits
+
+Input Graph:
+<1,2: 2.0>
+<1,5: 2.0>
+<1,6: 2.0>
+<1,9: 2.0>
+<2,10: 2.0>
+<2,11: 2.0>
+<2,12: 2.0>
+<2,14: 2.0>
+<3,7: 2.0>
+<4,8: 2.0>
+<5,6: 1.0>
+<5,7: 1.0>
+<5,8: 1.0>
+<5,9: 1.0>
+<6,7: 2.0>
+<6,8: 2.0>
+<7,10: 2.0>
+<8,11: 2.0>
+<11,12: 1.0>
+<11,13: 1.0>
+<13,14: 1.0>
+Count of edges in graph : 21
+--------VertexHash Contents--------
+{1: 9, 3: 9, 4: 9, 5: 1, 11: 2, 13: 4}
+
+-----Inside the Precomputations()--------
+	ctrlSpans{11: 14, 13: 14, 5: 9}
+	ctrlSpans{11: 14, 13: 14, 5: 9}
+	 Inside AnalyseCtrlBlocks()----
+		Ctrl Stat Hash: {11: stat(target=11, producerList=[], dEdgeList=[]), 5: stat(target=5, producerList=[8, 7], dEdgeList=[8, 6, 7])}
+---Calling Segmentation()----
+
+--------Inside Segmentation--------
+
+ -------Inside Ncec()-------
+
+---Inspecting block at [11], span (14)------
+
+		 Block :11Affinity :-1
+
+
+	 Disqualified for extraction block :11
+
+Edges merged in the control block rooted at 11are [(11, 12), (11, 13), (11, 14)]
+	 Block at 11 is outer and is contracted
+
+---Inspecting block at [5], span (9)------
+
+		 Block :5Affinity :0.4
+
+
+	 Disqualified for extraction block :5
+
+Edges merged in the control block rooted at 5are [(5, 6), (5, 7), (5, 8), (5, 9)]
+	 Block at 5 is outer and is contracted
+
+---------Graph Post NCEC--------
+<1,2: 2.0>
+<1,5: 2.0>
+<2,10: 2.0>
+<2,11: 2.0>
+<3,5: 2.0>
+<4,5: 2.0>
+<5,10: 2.0>
+<5,11: 2.0>
+Count of edges in graph : 8
+	 All Exclusive source at 5 are  3 4
+
+--------Graph Post ESC--------
+<1,2: 2.0>
+<1,5: 2.0>
+<2,10: 2.0>
+<2,11: 2.0>
+<5,10: 2.0>
+<5,11: 2.0>
+Count of edges in graph : 6
+
+--------Graph Post SDDC--------
+<1,2: 2.0>
+<1,5: 2.0>
+<2,10: 2.0>
+<2,11: 2.0>
+<5,10: 2.0>
+<5,11: 2.0>
+Count of edges in graph : 6
+
+
+-----------------------------------------------------------------------
+
+Segment Graph is as follows:
+{0: [0], 1: [1], 2: [2], 5: [5, 6, 7, 8, 9, 3, 4], 10: [10], 11: [11, 12, 13, 14]}List of segments extracted are as follows:
+[]

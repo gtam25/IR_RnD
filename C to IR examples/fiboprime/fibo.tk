@@ -1,0 +1,23 @@
+invar
+input n
+assign b
+assign a
+if n 2
+output a
+else 3
+assign i
+loop i 4
+assign t a b
+assign a b
+assign b t
+assign i i
+ouput b
+assign i
+loop i b 2
+if b i 1
+invar
+assign i i
+if b i 2
+invar
+else 1
+invar

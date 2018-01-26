@@ -1,0 +1,14 @@
+2 num$ 
+3 num@ num2$ 
+4 sum$ 
+5 reverse$ 
+6 num@ 
+7 num@ digit$ 
+8 sum@ digit@ sum$ 
+9 reverse@ digit@ reverse$ 
+10 num@ num$ 
+11 num2@ sum@ 
+12 reverse@ num2@ 
+13 num2@ 
+14 
+15 num2@ 
